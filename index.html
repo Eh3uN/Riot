@@ -6,28 +6,35 @@
     <title>Payment</title>
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
-  <body class="bg-[#f3f3f3] h-[800px]">
-    <!--#region wrapper-->
+  <body class="bg-[#f3f3f3] min-h-screen">
     <div class="wrapper">
-      <!--#region header-->
+      <!-- Header -->
       <div class="flex justify-center">
         <header
-          class="header w-[80%] max-w-[1440px] h-24 px-8 flex flex-row-reverse justify-between bg-white rounded-b-2xl items-center"
+          class="header w-full md:w-[80%] md:max-w-[1440px] h-20 md:h-24 px-4 md:px-8 flex flex-row-reverse justify-between bg-white md:rounded-b-2xl items-center"
         >
-          <div class="flex flex-row-reverse justify-center items-center gap-1">
-            <a class="font-regular-es text-[16px] text-[#353535]" href="#"
+          <div
+            class="flex flex-row-reverse justify-center items-center gap-1 md:gap-2"
+          >
+            <a
+              class="font-regular-es text-xs md:text-[16px] text-[#353535] truncate"
+              href="#"
               >اولدوز بهاور</a
             >
             <a href="#">
               <img
-                class="w-11 h-11 rounded-full"
+                class="w-8 h-8 md:w-11 md:h-11 rounded-full"
                 src="./src/images/payment/header/person.png"
                 alt=""
-            /></a>
+              />
+            </a>
           </div>
-          <div class="flex flex-row-reverse gap-10 items-center justify-center">
+
+          <div
+            class="hidden md:flex flex-row-reverse gap-10 items-center justify-center"
+          >
             <div>
-              <a href="#">
+              <a href="#" class="hover:cursor-pointer md:hover:cursor-pointer">
                 <img
                   src="./src/images/payment/header/search-outline.svg"
                   alt=""
@@ -40,62 +47,71 @@
               <a
                 href="#"
                 class="font-regular-es text-[16px] text-[#353535] hover:text-[#194BF0] transition duration-300"
+                >تماس با ما</a
               >
-                تماس با ما
-              </a>
               <a
                 href="#"
                 class="font-regular-es text-[16px] text-[#353535] hover:text-[#194BF0] transition duration-300"
+                >درباره ما</a
               >
-                درباره ما
-              </a>
               <a
                 href="#"
                 class="font-regular-es text-[16px] text-[#353535] hover:text-[#194BF0] transition duration-300"
+                >بلاگ</a
               >
-                بلاگ
-              </a>
               <a
                 href="#"
                 class="font-regular-es text-[16px] text-[#353535] hover:text-[#194BF0] transition duration-300"
+                >خدمات ما</a
               >
-                خدمات ما
-              </a>
               <a
                 href="#"
                 class="font-regular-es text-[16px] text-[#353535] hover:text-[#194BF0] transition duration-300"
+                >رزرو خودرو</a
               >
-                رزرو خودرو
-              </a>
             </div>
           </div>
+
+          <div class="flex md:hidden gap-4">
+            <a href="#"
+              ><img src="./src/images/payment/header/search-outline.svg" alt=""
+            /></a>
+          </div>
+
           <div>
-            <img src="./src/images/payment/header/Logo.png" alt="" />
+            <img
+              class="w-20 md:w-auto"
+              src="./src/images/payment/header/Logo.png"
+              alt=""
+            />
           </div>
         </header>
       </div>
 
-      <!--#endregion header-->
-      <!--#region main-->
-      <div class="flex main w-[80%] h-[512px] mx-auto mt-14">
-        <div class="w-[288px] gap-5 ml-6 flex flex-col">
+      <!-- Main Content -->
+      <div
+        class="flex flex-col md:flex-row main w-full md:w-[80%] md:max-w-[1440px] mx-auto mt-6 md:mt-14 px-4 md:px-0 gap-4 md:gap-6"
+      >
+        <!-- Sidebar -->
+        <div class="w-full md:w-[288px] gap-5 flex flex-col">
+          <!-- User Card -->
           <div
-            class="w-[288px] h-[92px] bg-white gap-4 rounded-lg flex px-5 items-center justify-between"
+            class="w-full md:w-[288px] h-auto md:h-[92px] bg-white gap-4 rounded-lg flex flex-col md:flex-row px-4 md:px-5 py-3 md:py-0 items-center md:items-center justify-between"
           >
             <div>
               <img
-                class="w-16 h-16 rounded-full"
+                class="w-14 h-14 md:w-16 md:h-16 rounded-full"
                 src="./src/images/payment/payment/person.png"
                 alt=""
               />
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-1 md:gap-2 text-center md:text-right">
               <p
-                class="text-[16px] text-[#353535] font-medium-es font-semibold"
+                class="text-sm md:text-[16px] text-[#353535] font-medium-es font-semibold"
               >
                 اولدوز بهاور
               </p>
-              <p class="text-[13px] text-[#727272] font-light-es">
+              <p class="text-xs md:text-[13px] text-[#727272] font-light-es">
                 ۰۹۱۲۳۴۵۶۷۸۹
               </p>
             </div>
@@ -107,158 +123,183 @@
               /></a>
             </div>
           </div>
-          <div class="bg-white w-[288px] h-[372px] rounded-lg p-4">
-            <div class="flex flex-col gap-4">
-              <div class="flex w-60 h-6 items-center justify-between group">
+
+          <!-- Menu Items -->
+          <div class="bg-white w-full md:w-[288px] rounded-lg p-3 md:p-4">
+            <div class="flex flex-col gap-3 md:gap-4">
+              <!-- Wallet -->
+              <div
+                class="flex w-full items-center justify-between group hover:bg-[#f9f9f9] p-2 rounded transition"
+              >
                 <a href="#"
                   ><img
-                    class="group-hover:text-[#194bf0]"
+                    class="w-5 h-5 md:w-6 md:h-6"
                     src="./src/images/payment/payment/empty-wallet.svg"
                     alt=""
                 /></a>
                 <a
                   href="#"
-                  class="text-[13px] text-[#494949] font-light-es font-semibold w-[184px] group-hover:text-[#194BF0] transition duration-300"
+                  class="text-xs md:text-[13px] text-[#494949] font-light-es font-semibold flex-1 text-center group-hover:text-[#194BF0] transition duration-300"
                   >کیف پول</a
                 >
-                <a href="#" class="group-hover:text-[#194BF0]"
+                <a href="#"
                   ><img
+                    class="w-4 h-4 md:w-5 md:h-5"
                     src="./src/images/payment/payment/Arrow-left.svg"
                     alt=""
                 /></a>
               </div>
-              <span class="w-60 h-0 border border-[#F3F3F3]"></span>
+              <span class="w-full h-0 border border-[#F3F3F3]"></span>
 
-              <div class="flex w-60 h-6 items-center justify-between group">
+              <!-- Reserves -->
+              <div
+                class="flex w-full items-center justify-between group hover:bg-[#f9f9f9] p-2 rounded transition"
+              >
                 <a href="#"
                   ><img
-                    class="group-hover:text-[#194bf0]"
+                    class="w-5 h-5 md:w-6 md:h-6"
                     src="./src/images/payment/payment/reserve.svg"
                     alt=""
                 /></a>
                 <a
                   href="#"
-                  class="text-[13px] text-[#494949] font-light-es font-semibold w-[184px] group-hover:text-[#194BF0] transition duration-300"
+                  class="text-xs md:text-[13px] text-[#494949] font-light-es font-semibold flex-1 text-center group-hover:text-[#194BF0] transition duration-300"
                   >رزرو های من</a
                 >
-                <a href="#" class="group-hover:text-[#194BF0]"
+                <a href="#"
                   ><img
+                    class="w-4 h-4 md:w-5 md:h-5"
                     src="./src/images/payment/payment/Arrow-left.svg"
                     alt=""
                 /></a>
               </div>
-              <span class="w-60 h-0 border border-[#F3F3F3]"></span>
-              <div class="flex w-60 h-6 items-center justify-between group">
+              <span class="w-full h-0 border border-[#F3F3F3]"></span>
+
+              <!-- Address -->
+              <div
+                class="flex w-full items-center justify-between group hover:bg-[#f9f9f9] p-2 rounded transition"
+              >
                 <a href="#"
                   ><img
-                    class="group-hover:text-[#194bf0]"
+                    class="w-5 h-5 md:w-6 md:h-6"
                     src="./src/images/payment/payment/location.svg"
                     alt=""
                 /></a>
                 <a
                   href="#"
-                  class="text-[13px] text-[#494949] font-light-es font-semibold w-[184px] group-hover:text-[#194BF0] transition duration-300"
+                  class="text-xs md:text-[13px] text-[#494949] font-light-es font-semibold flex-1 text-center group-hover:text-[#194BF0] transition duration-300"
                   >آدرس های من</a
                 >
-                <a href="#" class="group-hover:text-[#194BF0]"
+                <a href="#"
                   ><img
+                    class="w-4 h-4 md:w-5 md:h-5"
                     src="./src/images/payment/payment/Arrow-left.svg"
                     alt=""
                 /></a>
               </div>
-              <span class="w-60 h-0 border border-[#F3F3F3]"></span>
+              <span class="w-full h-0 border border-[#F3F3F3]"></span>
 
-              <div class="flex w-60 h-6 items-center justify-between group">
+              <!-- Payments -->
+              <div
+                class="flex w-full items-center justify-between group hover:bg-[#f9f9f9] p-2 rounded transition"
+              >
                 <a href="#"
                   ><img
-                    class="group-hover:text-[#194bf0]"
+                    class="w-5 h-5 md:w-6 md:h-6"
                     src="./src/images/payment/payment/card-pos.svg"
                     alt=""
                 /></a>
                 <a
                   href="#"
-                  class="text-[13px] text-[#494949] font-light-es font-semibold w-[184px] group-hover:text-[#194BF0] transition duration-300"
+                  class="text-xs md:text-[13px] text-[#494949] font-light-es font-semibold flex-1 text-center group-hover:text-[#194BF0] transition duration-300"
                   >پرداخت‌های من</a
                 >
-                <a href="#" class="group-hover:text-[#194BF0]"
+                <a href="#"
                   ><img
+                    class="w-4 h-4 md:w-5 md:h-5"
                     src="./src/images/payment/payment/Arrow-left.svg"
                     alt=""
                 /></a>
               </div>
-              <span class="w-60 h-0 border border-[#F3F3F3]"></span>
+              <span class="w-full h-0 border border-[#F3F3F3]"></span>
 
-              <div class="flex w-60 h-6 items-center justify-between group">
+              <!-- Comments -->
+              <div
+                class="flex w-full items-center justify-between group hover:bg-[#f9f9f9] p-2 rounded transition"
+              >
                 <a href="#"
                   ><img
-                    class="group-hover:text-[#194bf0]"
+                    class="w-5 h-5 md:w-6 md:h-6"
                     src="./src/images/payment/payment/Comment-outline.svg"
                     alt=""
                 /></a>
                 <a
                   href="#"
-                  class="text-[13px] text-[#494949] font-light-es font-semibold w-[184px] group-hover:text-[#194BF0] transition duration-300"
+                  class="text-xs md:text-[13px] text-[#494949] font-light-es font-semibold flex-1 text-center group-hover:text-[#194BF0] transition duration-300"
                   >نظرات من</a
                 >
-                <a href="#" class="group-hover:text-[#194BF0]"
+                <a href="#"
                   ><img
+                    class="w-4 h-4 md:w-5 md:h-5"
                     src="./src/images/payment/payment/Arrow-left.svg"
                     alt=""
                 /></a>
               </div>
-              <span class="w-60 h-0 border border-[#F3F3F3]"></span>
+              <span class="w-full h-0 border border-[#F3F3F3]"></span>
 
-              <div class="flex w-60 h-6 items-center gap-2 group">
+              <!-- Logout -->
+              <div
+                class="flex w-full items-center gap-3 group hover:bg-[#f9f9f9] p-2 rounded transition"
+              >
                 <a href="#"
                   ><img
-                    class="group-hover:text-[#194bf0]"
+                    class="w-5 h-5 md:w-6 md:h-6"
                     src="./src/images/payment/payment/logout.svg"
                     alt=""
                 /></a>
                 <a
                   href="#"
-                  class="text-[13px] text-[#DB1D27] font-light-es font-semibold w-[184px]"
+                  class="text-xs md:text-[13px] text-[#DB1D27] font-light-es font-semibold"
                   >خروج</a
                 >
               </div>
             </div>
           </div>
         </div>
-        <div class="bg-white w-[912px] h-[238px] rounded-lg">
+
+        <!-- Logout Modal -->
+        <div class="bg-white w-full md:flex-1 rounded-lg">
           <div>
             <h2
-              class="font-regular-es font-semibold text-[16px] text-[#212121] p-6"
+              class="font-regular-es font-semibold text-base md:text-[16px] text-[#212121] p-4 md:p-6"
             >
               خروج
             </h2>
           </div>
           <span
-            class="w-[864px] mx-auto h-0 block border border-[#F3F3F3]"
+            class="w-full md:w-[calc(100%-48px)] mx-auto md:mx-6 h-0 block border border-[#F3F3F3]"
           ></span>
-          <div class="flex flex-col gap-8 mt-6">
+          <div class="flex flex-col gap-6 md:gap-8 mt-4 md:mt-6">
             <p
-              class="font-regular-es font-medium text-[#212121] mr-6 mt-3 text-[16px]"
+              class="font-regular-es font-medium text-[#212121] px-4 md:px-6 md:mr-0 text-sm md:text-[16px]"
             >
               برای خروج از حساب کاربری خود اطمینان دارید؟
             </p>
-            <div class="flex mr-6 gap-4">
+            <div class="flex px-4 md:px-6 md:mr-0 gap-3 md:gap-4 pb-6">
               <a
                 href="#"
-                class="w-[73px] h-9 text-[#DB1D27] text-[14px] leading-9 font-light-es font-semibold border-[1.5px] border-[#DB1D27] text-center rounded-lg hover:text-white hover:bg-[#DB1D27] transition-all duration-300"
+                class="md:w-[73px] md:h-9 text-[#DB1D27] text-xs px-2 md:text-[14px] leading-9 font-light-es font-semibold border-[1.5px] border-[#DB1D27] text-center rounded-lg hover:text-white hover:bg-[#DB1D27] transition-all duration-300"
                 >انصراف</a
               >
               <a
                 href="#"
-                class="bg-[#DB1D27] w-[116px] h-9 text-white text-[14px] leading-9 font-light-es font-semibold border-[1.5px] border-[#DB1D27] text-center rounded-lg"
+                class="md:w-[116px] h-9 bg-[#DB1D27] text-white text-xs px-2 md:text-[14px] leading-9 font-light-es font-semibold border-[1.5px] border-[#DB1D27] text-center rounded-lg hover:bg-[#c71620] transition-all duration-300"
                 >خروج از حساب</a
               >
             </div>
           </div>
         </div>
       </div>
-      <!--#endregion main-->
     </div>
-
-    <!--#endregion wrapper-->
   </body>
 </html>

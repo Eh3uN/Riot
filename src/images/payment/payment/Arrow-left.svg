@@ -3,7 +3,7 @@
   path {
     transition: stroke 0.2s ease;
   }
-  .group:hover svg path {
+  svg:hover path {
     stroke: #194BF0;
   }
 </style>
