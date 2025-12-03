@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body class="bg-[#f3f3f3] min-h-screen">
+    <!--#region wrapper-->
     <div class="wrapper">
-      <!-- Header -->
+      <!--#region Header -->
       <div class="flex justify-center">
         <header
           class="header w-full md:w-[80%] md:max-w-[1440px] h-20 md:h-24 px-4 md:px-8 flex flex-row-reverse justify-between bg-white md:rounded-b-2xl items-center"
@@ -87,8 +88,8 @@
           </div>
         </header>
       </div>
-
-      <!-- Main Content -->
+      <!--#endregion Header -->
+      <!--#region Main -->
       <div
         class="flex flex-col md:flex-row main w-full md:w-[80%] md:max-w-[1440px] mx-auto mt-6 md:mt-14 px-4 md:px-0 gap-4 md:gap-6"
       >
@@ -279,27 +280,238 @@
           <span
             class="w-full md:w-[calc(100%-48px)] mx-auto md:mx-6 h-0 block border border-[#F3F3F3]"
           ></span>
-          <div class="flex flex-col gap-6 md:gap-8 mt-4 md:mt-6">
-            <p
-              class="font-regular-es font-medium text-[#212121] px-4 md:px-6 md:mr-0 text-sm md:text-[16px]"
-            >
-              برای خروج از حساب کاربری خود اطمینان دارید؟
-            </p>
-            <div class="flex px-4 md:px-6 md:mr-0 gap-3 md:gap-4 pb-6">
-              <a
-                href="#"
-                class="md:w-[73px] md:h-9 text-[#DB1D27] text-xs px-2 md:text-[14px] leading-9 font-light-es font-semibold border-[1.5px] border-[#DB1D27] text-center rounded-lg hover:text-white hover:bg-[#DB1D27] transition-all duration-300"
-                >انصراف</a
-              >
-              <a
-                href="#"
-                class="md:w-[116px] h-9 bg-[#DB1D27] text-white text-xs px-2 md:text-[14px] leading-9 font-light-es font-semibold border-[1.5px] border-[#DB1D27] text-center rounded-lg hover:bg-[#c71620] transition-all duration-300"
-                >خروج از حساب</a
-              >
+          <div class="all-sections flex flex-col mt-5 p-3 gap-6">
+            <div class="first-sec flex gap-6 justify-between">
+              <div class="right-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      نام و نام خانوادگی
+                    </h2>
+                    <img
+                      class="w-6 h-6"
+                      src="./src/images/data/tick-circle.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      اولدوز بهاور
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="left-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      کدملی
+                    </h2>
+                    <img
+                      class="w-6 h-6"
+                      src="./src/images/data/tick-circle.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      ۰۰۳۴۸۷۹۴۷۲
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              class="w-full md:w-[calc(100%-48px)] mx-auto md:mx-6 h-0 block border border-[#F3F3F3]"
+            ></span>
+            <div class="second-sec flex gap-6 justify-between">
+              <div class="right-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      شماره موبایل
+                    </h2>
+                    <img
+                      class="w-6 h-6"
+                      src="./src/images/data/close-circle.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      -----------
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="left-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      ایمیل
+                    </h2>
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      autorent@gmail.com
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              class="w-full md:w-[calc(100%-48px)] mx-auto md:mx-6 h-0 block border border-[#F3F3F3]"
+            ></span>
+            <div class="third-sec flex gap-6 justify-between">
+              <div class="right-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      رمز عبور
+                    </h2>
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      *********
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="left-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      روش بازگرداندن پول من
+                    </h2>
+                    <img
+                      class="w-6 h-6"
+                      src="./src/images/data/tick-circle.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      IR۲۷۶۹۵۷۳۸۶۷۰۹۸۳۷۶۸۲۷۶۸۴ - شماره شبا
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              class="w-full md:w-[calc(100%-48px)] mx-auto md:mx-6 h-0 block border border-[#F3F3F3]"
+            ></span>
+            <div class="third-sec flex gap-6 justify-between">
+              <div class="right-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      تاریخ تولد
+                    </h2>
+                    <img
+                      class="w-6 h-6"
+                      src="./src/images/data/tick-circle.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      ۱۳۵۹/۱۱/۱۱
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="left-sec flex gap-6 w-[432px] px-6 justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-2 items-center">
+                    <h2 class="font-medium-es text-[13px] text-[#5E5E5E]">
+                      شغل
+                    </h2>
+                  </div>
+                  <div>
+                    <h2
+                      class="text-[16px] text-[#353535] font-regular-es font-semibold"
+                    >
+                      ---------------
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-6 h-6"
+                    src="./src/images/data/edit-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!--#endregion Main-->
     </div>
+    <!--#endregion wrapper-->
   </body>
 </html>
